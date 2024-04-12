@@ -1,4 +1,4 @@
-1. Create a folder in xampp C:\xampp\htdocs named: "inventory".
+1. Create a folder in xampp C:\xampp\htdocs name the folder to "inventory".
 
 2. Extract the zip file copy all the files inside the extracted file and paste it to the folder you have created "inventory".
 
