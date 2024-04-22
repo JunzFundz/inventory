@@ -26,6 +26,8 @@ body {
 	padding: 0;
 	grid-column: 2/8;
 	height: 100vh;
+	overflow: auto;
+	padding-bottom: 1rem;
 	/* background-image: url('../img/bg.jpg');
 		background-position: center;
 		background-size: contain;
@@ -85,9 +87,17 @@ body {
 	color: white;
 }
 
-label {
-	color: white;
+#myTable_wrapper{
+	padding-inline: 2rem;
 }
+
+label {
+	color: rgb(255, 255, 255);
+}
+.box label {
+	color: rgb(0, 0, 0);
+}
+
 
 tr {
 	text-align: center;
@@ -104,3 +114,4 @@ td {
 	border: 2px;
 	border-style: ridge;
 }
+

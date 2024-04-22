@@ -2,16 +2,13 @@
 session_start();
 include '../database/db_conn.php';
 
-// Query to count the number of items
 $sql = "SELECT COUNT(*) AS totalItems FROM request WHERE status='pending'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $totalItems = $row['totalItems'];
 
-// Close the database connection
 mysqli_close($conn);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +24,6 @@ mysqli_close($conn);
 <body>
     <div class="container-II">
         <div class="childcon">
-
             <div class="accordion-item mod_acc">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -64,9 +60,7 @@ mysqli_close($conn);
         </div>
         <?php require_once('load_modals.php'); ?>
         <div class="child">
-            <?php
-            include "sidemenu.php";
-                ?>
+            <?php include "sidemenu.php"; ?>
         </div>
     </div>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>

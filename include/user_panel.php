@@ -21,7 +21,6 @@ require_once '../database/db_conn.php'
 <body>
   <div class="container-II">
     <div class="childcon">
-
       <div class="accordion" id="accordionExample">
         <div class="accordion-item mod_acc">
           <h2 class="accordion-header" id="headingThree">
